@@ -1,16 +1,53 @@
+/* Ensure the body takes the full viewport height and centers content */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Game container is centered both horizontally and vertically */
+.game-container {
+    position: relative;
+    width: 660px; /* Container size larger to fit grid */
+    height: 660px; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: black;
+    border: 5px solid white;
+}
+
+/* Grid styling */
 .grid {
-    width: 606px;
-    height: 606px;
+    width: 586px; /* Adjusted for uniform size */
+    height: 585px;
     display: flex;
     flex-wrap: wrap;
+    gap: 5px; /* Add gap between cells */
+    background-color: #444; /* Similar background */
+    border: 2px solid white; /* Border around grid */
 }
 
+/* Individual square styling */
 .square {
-    height: 200px;
-    width: 200px;
-    border: solid black 1px;
+    width: 190px; /* Slightly smaller to allow spacing */
+    height: 190px;
+    background-color: #ccc;
+    border: 1px solid #666;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Mole styling */
 .mole {
     background-color: blue;
+    border-radius: 50%; /* Make mole circular */
+    transition: background-color 0.3s ease;
 }
