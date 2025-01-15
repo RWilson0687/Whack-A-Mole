@@ -139,3 +139,8 @@ This code is responsible for initiating the mole's movement and starting the cou
 Summary:
     This code effectively starts both the mole's random movement and the countdown timer, making the game interactive by allowing players to hit the mole while keeping track of the remaining time.
 */
+
+//Function to refresh the page
+function refreshPage() {
+    location.reload(); // Reloads the page
+}

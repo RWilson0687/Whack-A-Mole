@@ -5,27 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whack-a-mole</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h2> Your Score:</h2>
-    <h2 id="score">0</h2>
+    <div class="page-title">
+        <!-- Title Section -->
+        <h1>Whack-A-Mole</h1>
 
-    <h2> Time Left:</h2>
-    <h2 id="time-left">60</h2>
-    
+            <div id="score-wrapper">
+                <div id="score-board">
+                    <h2> Your Score:</h2>
+                    <h2 id="score"> 0 |</h2>
+                </div>
 
-    <div class="grid">
-        <div class="square" id="1"></div>
-        <div class="square" id="2"></div>
-        <div class="square" id="3"></div>
-        <div class="square" id="4"></div>
-        <div class="square" id="5"></div>
-        <div class="square" id="6"></div>
-        <div class="square" id="7"></div>
-        <div class="square" id="8"></div>
-        <div class="square" id="9"></div>
+                <div id="time-board">
+                    <h2>| Time Left:</h2>
+                    <h2 id="time-left">60</h2>
+                </div>
+            </div>
     </div>
+
+    <div class="wrapper">
+        <div class="game-description">
+            <!-- Game Description Section -->
+                <h3>Game Description</h3>
+                <p>Whack-A-Mole is a reflex-based game where players click moles that pop up randomly from 9 holes on the game board, aiming to score points by striking as many as possible before they disappear. Click on the blue circles as they appear to gain points.</p>
+        </div>
+
+        <div class="game-container">
+            <!-- Game Area -->
+            <div class="grid">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+
+        <div id="navigationPane">
+            <!-- Navigation Pane -->
+                <h3>
+                    <span style="margin-right: 5px;">🎮</span>Other Games<span style="margin-right: 5px;">🎮</span>
+                </h3>
+                <ul class="navigationPane">
+                    <li><a href="https://rwilson0687.github.io/Breakout/">Breakout</a></li>
+                    <li><a href="https://rwilson0687.github.io/ConnectFour/">Connect Four</a></li>
+                    <li><a href="https://rwilson0687.github.io/Frogger/">Frogger</a></li>
+                    <li><a href="https://rwilson0687.github.io/MemoryGame/">Memory Game</a></li>
+                    <li><a href="https://rwilson0687.github.io/RockPaperScissors/">Rock, Paper, Scissors</a></li>
+                    <li><a href="https://rwilson0687.github.io/SpaceInvaders/">Space Invaders</a></li>
+                    <li><a href="https://rwilson0687.github.io/Whack-A-Mole/">Whack-A-Mole</a></li>
+                </ul>
+        </div>
+</div>   
+
+
+</div>
+
+
+</div>
+
+<div id="gameButtons">
+<!-- Restart Button -->
+<button id="restart-button" onclick="refreshPage()">Restart</button>
+</div>
 
     <script src="wam.js"></script>
 </body>
